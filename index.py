@@ -30,5 +30,9 @@ def test2():
 def welcome_page():
    return render_template('welcome_page.html')
 
+@app.route('/choose_team', methods=['GET'])
+def welcome_page():
+   return render_template('choose_team.html')
+
 if __name__ == "__main__":
    app.run(debug=True)

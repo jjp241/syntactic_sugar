@@ -78,5 +78,9 @@ def choose_team():
 def quant_quiz():
    return render_template('quant_quiz.html')
 
+@app.route('/leaderboard', methods=['GET'])
+def leaderboard():
+   return render_template('leaderboard.html')
+
 if __name__ == "__main__":
    app.run(debug=True)

@@ -51,7 +51,8 @@ def login_form():
          "email": request.form["email"],
          "uni_name": request.form["university"],
          "major": request.form["major"],
-         "sex": request.form["sex"]
+         "sex": request.form["sex"],
+         "event": "Job fair University of Warsaw"
       }
 
       with open('db.json', 'r') as open_file:
@@ -73,6 +74,13 @@ def team_content():
 @app.route('/choose_team', methods=['GET'])
 def choose_team():
    return render_template('choose_team.html')
+
+@app.route('/admin_panel', methods=['GET'])
+def admin_panel():
+   with open('db.json', 'r') as open_file:
+         json_object = json.load(open_file)
+
+   return render_template('admin_panel.html', users_data=json_object)
 
 @app.route('/quant_quiz', methods=['GET'])
 def quant_quiz():

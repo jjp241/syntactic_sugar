@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/admin_panel_style.css') }}">
+        <title>Syntactic_Sugar</title>
+    </head>
+    <body>
+        <div id="root">
+            <div id="app-width">
+                <header>
+                    <img id="header_logo" src="logo_header.png" alt="Goldman Sachs logo" > 
+                </header>
+                <main>
+                    <div id="welcome-text"><p style="align-content: center; font-size: x-large;"> 
+                        Sort candidates by the event: 
+                        <!-- Sort job candidates: {{ users_data }} -->
+                    </div>   
+            
+                        <div class="button">
+                            <input class="submit_button" type="submit" id="login_submit" name="login_submit" value="Job fair university of Warsaw">
+                        </div>
+                        
+                        <div class="button">
+                            <input class="submit_button" type="submit" id="login_submit" name="login_submit" value="Women in tech">
+                        </div>
+                        <div class="button">
+                            <input class="submit_button" type="submit" id="login_submit" name="login_submit" value="Conference">
+                        </div>    
+                </main>
+            </div>
+        </div>
+    </body>
+</html>

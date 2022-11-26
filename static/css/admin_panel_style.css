@@ -1,0 +1,57 @@
+#Score {
+    width: 150px;
+    height: 50%;
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #385783;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#app-width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header {
+    background-color: #749bc4;
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    width: 100%;
+    justify-content: space-between;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 350px;
+    background-color: #ffffff;
+}
+
+#welcome-text {
+    font-size: xx-large;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+}

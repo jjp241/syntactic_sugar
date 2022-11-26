@@ -7,14 +7,40 @@ from flask import Flask,\
 
 import json
 
+from lib.token_authentication import is_token_file_present, get_goldman_token_value
+
 app = Flask(__name__, static_url_path='')
 app.config['SECRET_KEY'] = "2b3f12f3ef12a6c86b"
+
+# mock user token to just global variable
+session_user_token = None
 
 # What to do, when we receive GET or POST at index
 @app.route('/', methods=['GET', 'POST'])
 def index():
-   return render_template('welcome_page.html')
+   global session_user_token
 
+   if request.method == 'POST':    
+      # Check if physical token is present, if not try to read from text input
+      if is_token_file_present():
+         print('Token present!')
+
+         token_id = get_goldman_token_value()
+         session_user_token = token_id
+         print(token_id)
+         return redirect('/login_form')
+      else:
+         token_id = request.form['user-token']
+         if token_id and len(token_id) == 8:
+            session_user_token = token_id
+            return redirect('/login_form')
+         
+      print('No token found!')
+      return redirect('/')
+   else:
+      return render_template('welcome_page.html')
+
+   
 @app.route('/login_form', methods=['GET', 'POST'])
 def login_form():
    if request.method == 'POST':    
@@ -37,23 +63,12 @@ def login_form():
 
       return redirect('/choose_team')
 
-   return render_template('login_form.html')
+   return render_template('login_form.html', user_token=session_user_token)
+
 
 @app.route('/team_content', methods=['GET'])
 def team_content():
    return render_template('team_content.html')
-
-@app.route('/test1', methods=['GET'])
-def test1():
-   return render_template('test1.html')
-
-@app.route('/test2', methods=['GET'])
-def test2():
-   return render_template('test2.html')
-
-@app.route('/welcome_page', methods=['GET'])
-def welcome_page():
-   return render_template('welcome_page.html')
 
 @app.route('/choose_team', methods=['GET'])
 def choose_team():

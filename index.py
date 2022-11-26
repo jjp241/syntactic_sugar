@@ -32,11 +32,12 @@ def login_form():
 
       with open('db.json', 'r') as open_file:
          json_object = json.load(open_file)
-         print(json_object)
          json_object["user_data"].append(json_result)
          
          with open('db.json', 'w') as db_file:
             json.dump(json_object, db_file, indent=4)
+
+      return redirect('/choose_team')
 
    return render_template('login_form.html')
 

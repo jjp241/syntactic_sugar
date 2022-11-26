@@ -55,10 +55,17 @@ chmod a+x stop.sh
 ## Implemented Solution
 ### Platform
 We implemented a version of our platform with one flow - from logging into our system and activating the token id, through choosing a team, to
-seeing the challenges, games and quizzes related to that team. This is however easily scalable as the logic for each flow is the same as the one we implemented (the only differences are the challenges/games/quizzes for each team).
+seeing the challenges, games and quizzes related to that team. However this is easily scalable as the logic for each flow is the same as the one we implemented (the only differences are the challenges/games/quizzes for each team).
 
-### GoldTocken
+When choosing the team we show a short teams description, in order for the user to get a high level overview of what the team does and if they are interested in doing the challenges/games/quizzes associated with tat team.
+
+During completing the challenges/games/quizzes the user collects point, which encourages them to keep playing and completing more courses.
+
+Each move (click) of where the user goes is collected to our database.
+
+### GoldToken
 We implemented a prototype working version of our GoldToken.
+We also enable entering the token id, by hand in case if the user was to for example get the token id by mail.
 
 ### Database
 We mocked a database to collect the user data, and user analytics data (our 

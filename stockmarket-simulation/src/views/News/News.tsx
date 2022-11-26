@@ -32,16 +32,18 @@ class News extends React.Component<NewsProps> {
 
     getInactiveNewsView( inactiveNews: StockNews[] ) {
         return (
-            <div>
-                <Col xs={12} key={1}>
-                    <h3>Irrelavant news</h3>
-                    {inactiveNews.map( news => {
-                        return (
-                            <NewsCard news={news}/>
-                        );
-                    } )}
+            <Row>
+                <Col key={1} xs={12}>
+                    <h3>Active News</h3>
                 </Col>
-            </div>
+                {inactiveNews.map( news => {
+                    return (
+                        <Col key={news.text} xs={12}>
+                            <NewsCard news={news}/>
+                        </Col>
+                    );
+                } )}
+            </Row>
         );
     }
 

@@ -1,9 +1,6 @@
 import * as React from 'react';
-import { ProgressBar } from 'react-bootstrap';
 import { Card } from '../../../components/Card/Card';
 import { StockNews } from '../../../state/AppState';
-import { GoodieList } from './GoodieList';
-import { TaskList } from './TaskList';
 
 interface NewsCardProps {
     news: StockNews;

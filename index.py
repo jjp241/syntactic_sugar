@@ -45,7 +45,6 @@ def login_form():
 def test1():
    return render_template('test1.html')
 
-
 @app.route('/test2', methods=['GET'])
 def test2():
    return render_template('test2.html')
@@ -57,6 +56,10 @@ def welcome_page():
 @app.route('/choose_team', methods=['GET'])
 def choose_team():
    return render_template('choose_team.html')
+
+@app.route('/quant_quiz', methods=['GET'])
+def quant_quiz():
+   return render_template('quant_quiz.html')
 
 if __name__ == "__main__":
    app.run(debug=True)

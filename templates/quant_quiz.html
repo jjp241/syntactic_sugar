@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/welcome_page_style.css') }}">
+        <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+        <title>Syntactic_Sugar</title>
+    </head>
+    <body>
+        <div id="root">
+            <div id="app-width">
+                <header>
+                    <img id="header_logo" src="logo_header.png" alt="Goldman Sachs logo" > 
+                </header>
+                <main>
+                    <md-block>
+                        # Heading
+                        Some *embedded* Markdown which `md-block` can convert for you!
+                    </md-block>
+
+                </main>
+            </div>
+        </div>
+    </body>
+</html>

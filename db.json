@@ -18,6 +18,26 @@
             "major": "Computer Scvience",
             "sex": "Male",
             "event": "Job fair University of Warsaw"
+        },
+        {
+            "token-id": "test1",
+            "first_name": "Maciej",
+            "last_name": "Nazwisko",
+            "email": "asdfg@gmail.com",
+            "uni_name": "University of Warsaw",
+            "major": "Computer Science",
+            "sex": "Other",
+            "event": "Job fair University of Warsaw"
+        }
+    ],
+    "user_analytics_data": [
+        {
+            "token-id": "12345678",
+            "team": "quant"
+        },
+        {
+            "token-id": "12345678",
+            "team": "quant"
         }
     ]
 }

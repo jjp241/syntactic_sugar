@@ -15,6 +15,22 @@ app.config['SECRET_KEY'] = "2b3f12f3ef12a6c86b"
 # mock user token to just global variable
 session_user_token = None
 
+#collect user analytics data of which teams they are viewing
+def collect_data(team):
+   json_result = {
+         "token-id": session_user_token,
+         "team": team
+      }
+
+   with open('db.json', 'r') as open_file:
+      json_object = json.load(open_file)
+      json_object["user_analytics_data"].append(json_result)
+      
+      with open('db.json', 'w') as db_file:
+         json.dump(json_object, db_file, indent=4)
+
+   return
+
 # What to do, when we receive GET or POST at index
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -69,10 +85,12 @@ def login_form():
 
 @app.route('/team_content', methods=['GET'])
 def team_content():
+   collect_data("quant")
    return render_template('team_content.html')
 
 @app.route('/choose_team', methods=['GET'])
 def choose_team():
+   collect_data("quant")
    return render_template('choose_team.html')
 
 @app.route('/admin_panel', methods=['GET'])
@@ -84,6 +102,7 @@ def admin_panel():
 
 @app.route('/quant_quiz', methods=['GET'])
 def quant_quiz():
+   collect_data("quant")
    return render_template('quant_quiz.html')
 
 @app.route('/leaderboard', methods=['GET'])

@@ -23,3 +23,5 @@ Project for Goldman Sachs Warsaw Hackathon 2022.
 export FLASK_APP=index.py 
 flask run
 ```
+
+#### 4. To run stockmarket simulation game, please consult readme in relevant folder. 

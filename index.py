@@ -16,6 +16,9 @@ def index():
    return render_template('init.html',
                           sample_text=some_text)
 
+@app.route('/login_form', methods=['GET'])
+def login():
+   return render_template('login_form.html')
 
 @app.route('/test1', methods=['GET'])
 def test1():

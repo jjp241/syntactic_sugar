@@ -1,0 +1,29 @@
+header {
+    background-color: #749bc4;
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    width: 100%;
+    justify-content: right;
+}
+
+#header_logo {
+    margin-right: 1%;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    height: 350px;
+}
+
+.right_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.submit_button {
+    background-color: #749bc4;
+    color: azure;
+}

@@ -39,6 +39,10 @@ def login_form():
 
    return render_template('login_form.html')
 
+@app.route('/team_content', methods=['GET'])
+def team_content():
+   return render_template('team_content.html')
+
 @app.route('/test1', methods=['GET'])
 def test1():
    return render_template('test1.html')

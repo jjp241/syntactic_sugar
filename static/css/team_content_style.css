@@ -1,0 +1,101 @@
+#app-width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    margin: auto;
+    height: 1000px;
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    height: 100%; 
+    width: 400px; 
+    z-index: 1; 
+    background-color: #385783; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+    margin-right: 10px;
+}
+
+.sidenav a {
+    padding: 16px 16px 16px 60px;
+    font-size: 25px;
+    text-decoration: none;
+    color: azure;
+    display: block;
+    transition: 0.5s;
+}
+
+.sidenav a:hover {
+  color: #97bcda;
+}
+
+.close_button {
+    position: absolute;
+    top: 0;
+    font-size: 42px;
+    margin-left: 0%;
+}
+
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 75%;
+    width: 750px;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.photo {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-parent;
+    margin: 5px;
+    background-color: #385783;
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    transition: 0.3s; 
+}
+
+.img {
+    display: flex;  
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.3s; 
+    width: fit-parent;
+}
+
+.photo-text {
+    font-size: large;
+    /* width: 200px; */
+    float: center;
+    transition: 0.3s; 
+}
+
+.photo:hover {
+    color: #97bcda;
+    box-shadow: 0px 0px 20px 10px #97bcda;
+}

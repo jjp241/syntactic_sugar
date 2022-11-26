@@ -1,3 +1,17 @@
+#Score {
+    width: 150px;
+    height: 50%;
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #385783;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
 #root {
     display: flex;
     flex-direction: column;
@@ -20,7 +34,7 @@ header {
     flex-direction: row;
     height: 90px;
     width: 100%;
-    justify-content: right;
+    justify-content: space-between;
 }
 
 #header_logo {

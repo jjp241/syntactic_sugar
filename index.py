@@ -39,9 +39,25 @@ def login_form():
 
    return render_template('login_form.html')
 
+@app.route('/test1', methods=['GET'])
+def test1():
+   return render_template('test1.html')
+
+@app.route('/test2', methods=['GET'])
+def test2():
+   return render_template('test2.html')
+
+@app.route('/welcome_page', methods=['GET'])
+def welcome_page():
+   return render_template('welcome_page.html')
+
 @app.route('/choose_team', methods=['GET'])
 def choose_team():
    return render_template('choose_team.html')
+
+@app.route('/quant_quiz', methods=['GET'])
+def quant_quiz():
+   return render_template('quant_quiz.html')
 
 if __name__ == "__main__":
    app.run(debug=True)

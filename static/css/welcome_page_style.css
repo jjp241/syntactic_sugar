@@ -100,15 +100,26 @@ main {
     padding: 10px;
 }
 
+#token {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #enter-token {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 200px;
     margin-top: 25px;
     margin-bottom: 25px;
+    padding: 10px; 
     width: 40%;
     background-color: #ffffff;
 }
 
 #enter-token-text {
+    text-align: center;
     font-size: large;
     padding: 10px;
 }

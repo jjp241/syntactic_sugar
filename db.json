@@ -1,3 +1,23 @@
 {
-    "user_data": []
+    "user_data": [
+        {
+            "token-id": "test1",
+            "first_name": "Anna",
+            "last_name": "Hejka",
+            "email": "hejka@hejka",
+            "uni_name": "Warsaw",
+            "major": "Computer Scvience",
+            "sex": "Female"
+        },
+        {
+            "token-id": "test1",
+            "first_name": "Marcin",
+            "last_name": "Ka\u0142u\u017ca",
+            "email": "kaluza@uni",
+            "uni_name": "Warsaw",
+            "major": "Computer Scvience",
+            "sex": "Male",
+            "event": "Job fair University of Warsaw"
+        }
+    ]
 }

@@ -1,4 +1,5 @@
 # Stockmarket Simulation
+Modified repo of https://github.com/stockmarkat/stockmarket-simulation. 
 
 ## Run locally
 It's easy to run a local instance of this simulation - just clone the repository, run `yarn install` ([installation instructions for yarn](https://yarnpkg.com/en/docs/install)) and use:

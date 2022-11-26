@@ -64,8 +64,13 @@ During completing the challenges/games/quizzes the user collects point, which en
 Each move (click) of where the user goes is collected to our database.
 
 ### GoldToken
-We implemented a prototype working version of our GoldToken.
-We also enable entering the token id, by hand in case if the user was to for example get the token id by mail.
+We implemented a prototype working version of our GoldToken. We can show how it works on our devices. We also enable entering the token id, by hand in case if the user was to for example get the token id by mail.
+
+3D model was done in Autodesk Fusion360.
+
+Gold Token is implemented by regular pendrive, with `user-token.json` where the unique ID is saved. After plugging to device and clicking `Proceed` our backend scans for this file in USB devices.
+
+Then loads this ID from token, and proceeds further in app.
 
 ### Database
 We mocked a database to collect the user data, and user analytics data (our 
@@ -104,3 +109,5 @@ This makes it easier to reach out to potential candidates, which will make the r
 
 ### Stockmarket simulation 
 We've used an open source solution, which we tinkered with to make it work for our use case. Actually, on a branch 'news' we imroved the news feed feature that was in developement on a official release of package. 
+
+

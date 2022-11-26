@@ -1,0 +1,28 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#app-width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header {
+    background-color: #749bc4;
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    width: 100%;
+    justify-content: right;
+}
+
+#header_logo {
+    margin-right: 1%;
+}

@@ -1,3 +1,3 @@
-import Market from './Market';
+import News from './News';
 
-export default Market;
+export default News;

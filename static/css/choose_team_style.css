@@ -89,9 +89,9 @@ main {
   width: 40%;
 }
 
-.team-photo:hover {
+/* .team-photo:hover {
     transform: scale(1.1);
-}
+} */
 
 #team-img {
     display: flex;  
@@ -120,3 +120,31 @@ a.team-img-clickable {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
+.hide {
+    position: absolute;
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #749bc4;
+    padding: 2px;
+  }
+
+  .text {
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: start;
+    width: 200px;
+  }
+
+  .wrapper_hover:hover .hide {
+    opacity: 1;
+  }

@@ -70,8 +70,8 @@ main {
 
 .gallery {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     height: 75%;
     width: 750px;

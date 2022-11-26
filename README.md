@@ -2,6 +2,9 @@
 
 Project for Goldman Sachs Warsaw Hackathon 2022.
 
+### Link to our 5 minute video presentation:
+https://drive.google.com/file/d/13Nu_U5iX_ofohM_L8YMUj3I8uHPRfpcq/view?usp=share_link
+
 ### Problem Definition:
  - People in IT don’t know what Goldman Sachs does, and what they can do here.
  - The Goldman Sachs booth is not interesting and people are not keen on completing forms, which would enable Goldman Sachs to collect data about potential candidates.

@@ -102,3 +102,5 @@ by the event they attended, their token id etc.
 They can access data to all of the users data as well as the collected users analytics data. 
 This makes it easier to reach out to potential candidates, which will make the recruitment process faster and smoother.
 
+### Stockmarket simulation 
+We've used an open source solution, which we tinkered with to make it work for our use case. Actually, on a branch 'news' we imroved the news feed feature that was in developement on a official release of package. 

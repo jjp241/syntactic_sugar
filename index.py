@@ -26,6 +26,9 @@ def test1():
 def test2():
    return render_template('test2.html')
 
+@app.route('/welcome_page', methods=['GET'])
+def welcome_page():
+   return render_template('welcome_page.html')
 
 if __name__ == "__main__":
    app.run(debug=True)

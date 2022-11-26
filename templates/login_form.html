@@ -14,7 +14,7 @@
                     <h3> Log in with your token! </h3> 
                 </div>
 
-                <form method="post">
+                <form method="post" action="{{ url_for('login_form') }}">
                     <fieldset>
                     <legend> </legend>
                     <div class="row responsive-label">
@@ -22,7 +22,7 @@
                             <label for="first_name"> First name </label>
                         </div>
                         <div class="col-sm-12 col-md">
-                            <input type="text" id="first_name" name="first_name" placeholder="First Name"/>
+                            <input type="text" id="first_name" name="first_name" placeholder="First Name" required />
                         </div>   
                     </div>
                     <div class="row responsive-label">
@@ -30,7 +30,7 @@
                             <label for="last_name"> Last name </label>
                         </div>
                         <div class="col-sm-12 col-md">
-                            <input type="text" id="last_name" name="last_name" placeholder="Last Name"/>
+                            <input type="text" id="last_name" name="last_name" placeholder="Last Name" required />
                         </div>   
                     </div>
                     <div class="row responsive-label">
@@ -38,7 +38,7 @@
                             <label for="email"> E-mail address </label>
                         </div>
                         <div class="col-sm-12 col-md">
-                            <input type="text" id="email" name="email" placeholder="E-mail"/>
+                            <input type="text" id="email" name="email" placeholder="E-mail" required />
                         </div>   
                     </div>
                     <div class="row responsive-label">
@@ -46,7 +46,7 @@
                             <label for="univeristy"> University name </label>
                         </div>
                         <div class="col-sm-12 col-md">
-                            <input type="text" id="univeristy" name="university" placeholder="University Name"/>
+                            <input type="text" id="univeristy" name="university" placeholder="University Name" required />
                         </div>   
                     </div>
                     <div class="row responsive-label">
@@ -54,7 +54,7 @@
                             <label for="major"> Major </label>
                         </div>
                         <div class="col-sm-12 col-md">
-                            <input type="text" id="major" name="major" placeholder="Computer Science"/>
+                            <input type="text" id="major" name="major" placeholder="Computer Science" required />
                         </div>   
                     </div>
                     <div class="row responsive-label">

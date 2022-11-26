@@ -89,6 +89,10 @@ main {
   width: 40%;
 }
 
+.team-photo:hover {
+    transform: scale(1.1);
+}
+
 #team-img {
     display: flex;  
     height: 180px;
@@ -97,6 +101,14 @@ main {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+
+a.team-img-clickable {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
 
 #team-photo-text {
     color: #ffffff;

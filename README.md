@@ -33,3 +33,12 @@ cd ..
 chmod a+x run.sh
 ./run.sh
 ```
+
+Now you can see our app on `localhost:5000` :heart:
+
+#### 5. To kill the server, just run another script:
+
+```
+chmod a+x stop.sh
+./stop.sh
+```

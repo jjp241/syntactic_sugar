@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/general_style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/team_content_style.css') }}">
+        <title>Syntactic_Sugar</title>
+    </head>
+    <body>
+        <div id="root">
+            <div id="app-width">
+                <header>
+                    <div id="Score">
+                        <p>GoldPoints: 2000</p>
+                    </div>
+                    <img id="header_logo" src="{{url_for('static', filename='goldman.png')}}"" alt="Goldman Sachs logo" > 
+                </header>
+                <main>
+                    <div id="quizzes" class="sidenav">
+                        <a href="/quant_quiz">Quants - what they do? + Quiz (2000 GP)</a>
+                        <a href="#">Leave your CV (1300 GP)</a>
+                        <a href="#">ML architectures that rule the fintech world!</a>
+                        <a href="#">GS tips & tricks, how to prepare for a quant interview?</a>
+                      </div>
+
+
+                    <div class="gallery">
+                        <div class="photo">
+                            <a href="http://localhost:3000" class="photo-clickable">
+                                <div class="game-bar">
+                                    <img class="img" src="stock_demo.jpg" alt="Stock market" >
+                                    <p class="photo-text">Stock market simulation, test your strategies! (win GoldPoints)</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="photo">
+                            <a href="#" class="photo-clickable">
+                                <div class="game-bar">
+                                    <img class="img" src="machine_learning.jpg" alt="Stock market" >
+                                    <p class="photo-text">Compete with your AI pricing model!</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="photo">
+                            <a href="#" class="photo-clickable">
+                                <div class="game-bar">
+                                    <img class="img" src="stat1.jpg" alt="Stock market" >
+                                    <p class="photo-text">Quant interview questions competition!</p>
+                                </div>
+                            </a>
+                        </div
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+</html> 

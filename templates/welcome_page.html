@@ -8,6 +8,9 @@
         <div id="root">
             <div id="app-width">
                 <header>
+                    <div id="Score">
+                        <p>GoldPoints: 0</p>
+                    </div>
                     <img id="header_logo" src="logo_header.png" alt="Goldman Sachs logo" > 
                 </header>
                 <main>
@@ -33,10 +36,11 @@
 
                 <div id="token">
                 <div id="enter-token">
-                        <div id="enter-token-text">Use your token or enter id to enter the game:<div>
-                        <form>
-                            <input type="text" id="user-id" name="user-id" placeholder="Enter your user id"><br>                    
-                        </form>     
+                        <div id="enter-token-text">Use your token or enter ID to enter the game:<div>
+                        <form method="post">
+                            <input type="text" id="user-token" name="user-token" placeholder="Enter your user token id"><br>
+                            <input class="submit_button" type="submit" id="welcome_submit" name="welcome_submit" value="Proceed">                    
+                        </form>                               
                 </div>
                 </div>
             </div>

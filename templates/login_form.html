@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/login_form_style.css') }}">
+        <title>Syntactic_Sugar</title>
+    </head>
+    <body>
+        <div id="root">
+            <div id="app-width">
+                <header>
+                    <div id="Score">
+                        <p>GoldPoints: 500</p>
+                    </div>
+                    <img id="header_logo" src="{{url_for('static', filename='goldman.png')}}"" alt="Goldman Sachs logo" > 
+                </header>
+                <main>
+                    <div class="card fluid">
+                        <h3> Fill in your data to activate your GoldToken! </h3> 
+                        <h5> Your unique GoldToken ID: {{user_token}} </h5>
+                    </div>
+
+                    <form method="post" action="{{ url_for('login_form') }}">
+                        <fieldset>
+                        <legend> </legend>
+                        <div class="row responsive-label">
+                            <div class="col-sm-12 col-md-3">
+                                <label for="first_name"> First name </label>
+                            </div>
+                            <div class="col-sm-12 col-md">
+                                <input type="text" id="first_name" name="first_name" placeholder="First Name" required />
+                            </div>   
+                        </div>
+                        <div class="row responsive-label">
+                            <div class="col-sm-12 col-md-3">
+                                <label for="last_name"> Last name </label>
+                            </div>
+                            <div class="col-sm-12 col-md">
+                                <input type="text" id="last_name" name="last_name" placeholder="Last Name" required />
+                            </div>   
+                        </div>
+                        <div class="row responsive-label">
+                            <div class="col-sm-12 col-md-3">
+                                <label for="email"> E-mail address </label>
+                            </div>
+                            <div class="col-sm-12 col-md">
+                                <input type="text" id="email" name="email" placeholder="E-mail" required />
+                            </div>   
+                        </div>
+                        <div class="row responsive-label">
+                            <div class="col-sm-12 col-md-3">
+                                <label for="univeristy"> University name </label>
+                            </div>
+                            <div class="col-sm-12 col-md">
+                                <input type="text" id="univeristy" name="university" placeholder="University Name" required />
+                            </div>   
+                        </div>
+                        <div class="row responsive-label">
+                            <div class="col-sm-12 col-md-3">
+                                <label for="major"> Major </label>
+                            </div>
+                            <div class="col-sm-12 col-md">
+                                <input type="text" id="major" name="major" placeholder="Computer Science" required />
+                            </div>   
+                        </div>
+                        <div class="row responsive-label">
+                            <div class="col-sm-12 col-md-3">
+                                <label for="sex"> Sex </label>
+                            </div>
+                            <div class="col-sm-12 col-md">
+                                <select name="sex" id="sex" required>
+                                    <option value="" selected disabled hidden>---</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>   
+                        </div>
+
+                        <div class="right_button">
+                            <input class="submit_button" type="submit" id="login_submit" name="login_submit" value="Log in">
+                        </div>
+                        </fieldset>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </body>
+</html> 

@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/quant_quiz.css') }}">
+        <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+        <title>Syntactic_Sugar</title>
+    </head>
+    <body>
+        <div id="root">
+            <div id="app-width">
+                <header>
+                    <div id="Score">
+                        <p>GoldPoints: 2000</p>
+                    </div>
+                    <img id="header_logo" src="logo_header.png" alt="Goldman Sachs logo" > 
+                </header>
+                <main>
+
+                    <md-block style="margin-top: 20px">
+                        # Quants - what they do? 
+                        ### Read and test yourself as a Quant with a quiz! (2000 GoldPoints)
+
+                    </md-block>
+                    
+                    <img id="quant-img" src="quant.avif" alt="quant" style="margin: 40px">
+                    <md-block>
+
+                        Quants at Goldman Sachs are responsible for analyzing data for clients, and creating meaningful interpretations from them!
+
+                        ##### Your responsibilities as a Quant:
+                        - Develop, implement, and maintaining quantitative measures of risk ("Risk Models") such as Value at Risk
+                        - Implement models in production using sophisticated software, such as object-oriented computer languages
+                        - Coordinate across multiple groups, including strategists, technology and controllers to implement
+
+                        ##### Used Technologies:
+                    </md-block>
+                    <img id="quant-img" src="libaries.png" alt="quant_lib" style="margin: 40px">
+
+                    <md-block>
+
+                        ## Quiz - MSE and plots modeling
+
+                        As a quant, you will develop models to predict trends and fit some mathematical functions to series like stock shares.
+
+                        To measure how good prediction is, we use different **metrics** - values that say how good our model/prediction is, how much
+                        differs from correct one.
+
+                        One of the most popular one metrics is **MSE - Mean Square Error** which is described by this simple formula:
+
+                    </md-block>
+                    
+                    <img id="mse-img" src="mse.jpg" alt="mse" style="margin: 40px; width: 40%">
+
+                    <md-block>
+
+                        So in plain english: we calculate difference between values at each timestep, sum their squares and take mean value.
+
+                        Let's suppose you are analyzing how stock shares of some company changed in time:
+                        <img id="share-1" src="share_price.png" alt="share-1" style="margin-right: 40px; margin-top: 40px; margin-bottom: 40px;">
+
+                        And your colleague proposed three different mathematical models to model that share price. This could help us predict how it
+                        behaves in future. Take a look at them and answer: **which one has lowest MSE?**
+                        
+                        <button name="forwardBtn" type="submit">Model 1</button>
+                        <img id="share-2" src="share_price_1.png" alt="share-2" style="margin-right: 40px; margin-top: 40px;">
+
+                        <button name="forwardBtn" type="submit">Model 2</button>
+                        <img id="share-3" src="share_price_2.png" alt="share-3" style="margin-right: 40px">
+
+                        <button name="forwardBtn" type="submit">Model 3</button>
+                        <img id="share-4" src="share_price_3.png" alt="share-4" style="margin-right: 40px">
+
+
+                    </md-block>
+                    
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
